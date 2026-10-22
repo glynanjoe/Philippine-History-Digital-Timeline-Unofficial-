@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block title %}The Founding of Manila | Philippine History{% endblock %}
+
+{% block content %}
+
+<article class="history-detail">
+
+    <a href="{{ url_for('home') }}" class="back-link">
+        ← Back to Historical Timeline
+    </a>
+
+    <header class="detail-header">
+        <p class="eyebrow">1571 · SPANISH COLONIAL PERIOD</p>
+
+        <img
+            src="{{ url_for('static', filename='images/founding_manila.jpg') }}"
+            alt="Historical illustration of the founding of Manila"
+            class="detail-image"
+        >
+
+        <h1>The Founding of Manila</h1>
+
+        <p class="detail-intro">
+            The establishment of Manila as the center of Spanish
+            colonial government in the Philippines.
+        </p>
+    </header>
+
+    <section class="detail-section">
+        <h2>Historical Background</h2>
+
+        <p>
+            Before the Spanish takeover, Manila was an established
+            settlement with local leaders and connections to regional
+            trading networks. It was an important center of commerce
+            before the arrival of
+            <a
+                href="https://en.wikipedia.org/wiki/Miguel_L%C3%B3pez_de_Legazpi"
+                target="_blank"
+                rel="noopener noreferrer"
+            >Miguel López de Legazpi</a>.
+        </p>
+
+        <p>
+            In 1571, Legazpi took control of Manila and established
+            it as the capital of Spanish colonial government.
+            The Spanish built Intramuros, a walled district that
+            became a center of colonial administration, religion,
+            and military activity.
+        </p>
+
+        <p>
+            Spanish control did not spread across the entire
+            archipelago at once. Different communities experienced
+            Spanish expansion in different ways, and local resistance
+            continued in various places.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Historical Significance</h2>
+
+        <p>
+            Manila became the main center of Spanish colonial
+            administration in the Philippines. Its location helped
+            connect the archipelago with regional Asian trade and
+            the Spanish Empire.
+        </p>
+
+        <p>
+            Manila later became a major port in the Manila-Acapulco
+            Galleon Trade, which connected Asia and the Americas
+            across the Pacific. This trade brought goods, people,
+            and cultural influences while also serving Spanish
+            colonial interests.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Connection to the Present</h2>
+
+        <p>
+            Manila remains an important political, economic,
+            and cultural center of the Philippines. Historic places
+            such as Intramuros preserve buildings and landmarks
+            connected to the Spanish colonial period.
+        </p>
+
+        <p>
+            Studying the founding of colonial Manila helps us
+            understand how historical decisions shaped Philippine
+            cities, government, trade, and cultural heritage.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>References</h2>
+
+        <ol>
+            <li>
+                Encyclopaedia Britannica.
+                <em>Manila: History and Background.</em>
+                <a
+                    href="https://www.britannica.com/place/Manila"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Read about Manila
+                </a>
+            </li>
+
+            <li>
+                National Historical Commission of the Philippines.
+                Historical resources on Philippine history and heritage.
+                <a
+                    href="https://nhcp.gov.ph/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    NHCP official website
+                </a>
+            </li>
+        </ol>
+    </section>
+
+    <a href="{{ url_for('home') }}" class="back-link bottom-link">
+        ← Return to the Historical Timeline
+    </a>
+
+</article>
+
+{% endblock %}

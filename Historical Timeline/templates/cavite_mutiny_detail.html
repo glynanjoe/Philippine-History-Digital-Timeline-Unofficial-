@@ -1,0 +1,153 @@
+
+{% extends "base.html" %}
+
+{% block title %}The Cavite Mutiny of 1872 | Philippine History{% endblock %}
+
+{% block content %}
+
+<article class="history-detail">
+
+    <a href="{{ url_for('home') }}" class="back-link">
+        ← Back to Historical Timeline
+    </a>
+
+    <header class="detail-header">
+        <p class="eyebrow">1872 · SPANISH COLONIAL PERIOD</p>
+
+        <img
+            src="{{ url_for('static', filename='images/cavite_mutiny.jpg') }}"
+            alt="Historical illustration representing the Cavite Mutiny"
+            class="detail-image"
+        >
+
+        <h1>The Cavite Mutiny of 1872</h1>
+
+        <p class="detail-intro">
+            A short-lived uprising at the Cavite arsenal that
+            became a significant event in the history of
+            Spanish colonial rule and Filipino nationalism.
+        </p>
+    </header>
+
+    <section class="detail-section">
+        <h2>Historical Background</h2>
+
+        <p>
+            On January 20, 1872, Filipino military personnel
+            and workers at the Cavite arsenal rose in revolt
+            against Spanish authorities. The uprising was
+            quickly suppressed by colonial forces.
+        </p>
+
+        <p>
+            The colonial government, led by
+            <a href="https://en.wikipedia.org/wiki/Rafael_de_Izquierdo_y_Guti%C3%A9rrez"
+               target="_blank" rel="noopener noreferrer">
+                Governor-General Rafael de Izquierdo
+            </a>,
+            treated the incident as evidence of a wider
+            conspiracy against Spanish rule. However, historians
+            have examined different accounts of the event and
+            questioned claims that the mutiny was part of a
+            coordinated nationwide revolution.
+        </p>
+
+        <p>
+            One important account was written by
+            <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Montero_y_Vidal"
+               target="_blank" rel="noopener noreferrer">
+                José Montero y Vidal
+            </a>.
+            His account reflected the Spanish colonial
+            interpretation of the uprising. Comparing it
+            with other historical documents helps explain
+            why the causes and meaning of the mutiny remain
+            important subjects of historical study.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Historical Significance</h2>
+
+        <p>
+            The aftermath of the mutiny included the arrest
+            and prosecution of several Filipino reform advocates.
+            Three Filipino priests,
+            <a href="https://en.wikipedia.org/wiki/Mariano_G%C3%B3mez"
+               target="_blank" rel="noopener noreferrer">
+                Mariano Gómez
+            </a>,
+            <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Burgos"
+               target="_blank" rel="noopener noreferrer">
+                José Burgos
+            </a>,
+            and
+            <a href="https://en.wikipedia.org/wiki/Jacinto_Zamora"
+               target="_blank" rel="noopener noreferrer">
+                Jacinto Zamora
+            </a>,
+            were accused of involvement and executed on
+            February 17, 1872. They became known collectively
+            as GOMBURZA.
+        </p>
+
+        <p>
+            The mutiny and the execution of the three priests
+            became important reference points for later Filipino
+            reformers and nationalists. However, the mutiny
+            itself and the execution of GOMBURZA were separate
+            events that should be studied in their historical
+            relationship.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Connection to the Present</h2>
+
+        <p>
+            The Cavite Mutiny reminds us that historical
+            accounts can differ depending on who recorded
+            events and what interests they represented.
+            Examining evidence from different perspectives
+            helps us understand the past more responsibly.
+        </p>
+
+        <p>
+            It also encourages us to value fairness, careful
+            investigation, and the importance of examining
+            evidence before judging people or events.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>References</h2>
+
+        <ol>
+            <li>
+                Schumacher, John N. (2011).
+                "The Cavite Mutiny: Toward a Definitive History."
+                <em>Philippine Studies</em>, 59(1), 55–81.
+                <a href="https://philippinestudies.net/files/journals/1/articles/3093/public/3093-3829-1-PB.pdf"
+                   target="_blank" rel="noopener noreferrer">
+                    Read the historical study
+                </a>
+            </li>
+
+            <li>
+                Provincial Government of Cavite.
+                <em>Brief History of Cavite.</em>
+                <a href="https://cavite.gov.ph/province/brief-history-of-cavite/"
+                   target="_blank" rel="noopener noreferrer">
+                    Read the provincial history
+                </a>
+            </li>
+        </ol>
+    </section>
+
+    <a href="{{ url_for('home') }}" class="back-link bottom-link">
+        ← Return to the Historical Timeline
+    </a>
+
+</article>
+
+{% endblock %}

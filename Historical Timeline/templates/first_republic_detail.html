@@ -1,0 +1,121 @@
+
+{% extends "base.html" %}
+
+{% block title %}First Philippine Republic | Historical Timeline{% endblock %}
+
+{% block content %}
+<article class="history-detail">
+    <a href="{{ url_for('home') }}" class="back-link">
+        ← Back to Historical Timeline
+    </a>
+
+    <header class="detail-header">
+        <p class="eyebrow">JANUARY 23, 1899 · FIRST PHILIPPINE REPUBLIC</p>
+
+        <img
+            src="{{ url_for('static', filename='images/first_republic.jpg') }}"
+            alt="Historical illustration of the First Philippine Republic"
+            class="detail-image"
+        >
+
+        <h1>Inauguration of the First Philippine Republic</h1>
+
+        <p class="detail-intro">
+            The inauguration of the First Philippine Republic
+            in Malolos, Bulacan, marked a major effort by Filipinos
+            to establish their own government and exercise
+            self-government.
+        </p>
+    </header>
+
+    <section class="detail-section">
+        <h2>Historical Background</h2>
+
+        <p>
+            Following the declaration of independence on June 12,
+            1898, Filipino revolutionary leaders worked to establish
+            a government for the newly proclaimed nation.
+            Representatives gathered to develop a constitution
+            and organize the country's political institutions.
+        </p>
+
+        <p>
+            The Malolos Constitution was approved in January 1899.
+            On January 23, the First Philippine Republic was
+            inaugurated in Malolos, Bulacan, with
+            <a href="https://www.britannica.com/biography/Emilio-Aguinaldo"
+               target="_blank" rel="noopener noreferrer">Emilio Aguinaldo</a>
+            serving as president.
+        </p>
+
+        <p>
+            The republic established a Filipino-led government
+            with constitutional principles and institutions.
+            However, its existence was challenged by the growing
+            conflict between Filipino forces and the United States,
+            which led to the Philippine-American War in 1899.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Historical Significance</h2>
+
+        <p>
+            The First Philippine Republic was a landmark in the
+            history of Philippine nationhood. It demonstrated
+            the efforts of Filipino leaders to build a government
+            based on a constitution and represent the Filipino people.
+        </p>
+
+        <p>
+            Although the republic faced war and did not maintain
+            its independence, it became an important symbol of
+            Filipino nationalism and the struggle for sovereignty.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Connection to the Present</h2>
+
+        <p>
+            The First Philippine Republic reminds us that building
+            a nation requires cooperation, responsible leadership,
+            respect for laws, and participation in public life.
+            Its history also encourages Filipinos to value the
+            country's institutions and democratic principles.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>References</h2>
+
+        <ol>
+            <li>
+                Official Gazette of the Republic of the Philippines.
+                <a href="https://www.officialgazette.gov.ph/"
+                   target="_blank" rel="noopener noreferrer">
+                    Official Gazette
+                </a>.
+            </li>
+            <li>
+                National Historical Commission of the Philippines.
+                <a href="https://nhcp.gov.ph/"
+                   target="_blank" rel="noopener noreferrer">
+                    Official NHCP website
+                </a>.
+            </li>
+            <li>
+                Encyclopaedia Britannica.
+                <a href="https://www.britannica.com/biography/Emilio-Aguinaldo"
+                   target="_blank" rel="noopener noreferrer">
+                    Emilio Aguinaldo biography
+                </a>.
+            </li>
+        </ol>
+    </section>
+
+    <a href="{{ url_for('home') }}" class="back-link bottom-link">
+        ← Return to the Historical Timeline
+    </a>
+</article>
+{% endblock %}

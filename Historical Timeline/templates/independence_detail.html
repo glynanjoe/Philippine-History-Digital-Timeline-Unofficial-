@@ -1,0 +1,118 @@
+    {% extends "base.html" %}
+
+{% block title %}Philippine Declaration of Independence | Historical Timeline{% endblock %}
+
+{% block content %}
+<article class="history-detail">
+    <a href="{{ url_for('home') }}" class="back-link">
+        ← Back to Historical Timeline
+    </a>
+
+    <header class="detail-header">
+        <p class="eyebrow">JUNE 12, 1898 · PHILIPPINE REVOLUTION</p>
+
+        <img
+            src="{{ url_for('static', filename='images/independence.jpg') }}"
+            alt="Historical illustration of the Philippine Declaration of Independence"
+            class="detail-image"
+        >
+
+        <h1>The Philippine Declaration of Independence</h1>
+
+        <p class="detail-intro">
+            On June 12, 1898, Filipino revolutionaries proclaimed
+            the Philippines' independence from Spanish colonial rule,
+            marking an important moment in the nation's history.
+        </p>
+    </header>
+
+    <section class="detail-section">
+        <h2>Historical Background</h2>
+
+        <p>
+            After years of Spanish colonial rule and growing calls
+            for reform and freedom, the Philippine Revolution began
+            in 1896. Filipino revolutionaries fought against Spanish
+            authorities to end colonial control.
+        </p>
+
+        <p>
+            On June 12, 1898, 
+            <a href="https://nhcp.gov.ph/"
+               target="_blank" rel="noopener noreferrer">Emilio Aguinaldo</a>
+            proclaimed Philippine independence in Kawit, Cavite.
+            The ceremony included the raising of the Philippine flag
+            and the performance of the national anthem.
+        </p>
+
+        <p>
+            The declaration expressed the revolutionary government's
+            claim that the Philippines was a free and independent
+            nation. However, Spain did not recognize this declaration.
+            Later in 1898, Spain ceded the Philippines to the United
+            States under the Treaty of Paris, creating another
+            struggle for Philippine independence.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Historical Significance</h2>
+
+        <p>
+            The declaration symbolized the Filipino people's
+            determination to govern themselves. It became a major
+            milestone in the development of Philippine nationalism
+            and the establishment of a Filipino-led government.
+        </p>
+
+        <p>
+            Although the declaration did not immediately secure
+            internationally recognized independence, it remains
+            an important symbol of the country's struggle for freedom.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Connection to the Present</h2>
+
+        <p>
+            The Philippines celebrates Independence Day every June 12.
+            The occasion honors those who fought for freedom and
+            encourages Filipinos to value their national identity,
+            rights, and responsibilities as citizens.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>References</h2>
+
+        <ol>
+            <li>
+                National Historical Commission of the Philippines.
+                <a href="https://nhcp.gov.ph/"
+                   target="_blank" rel="noopener noreferrer">
+                    Official NHCP website
+                </a>.
+            </li>
+            <li>
+                Official Gazette of the Republic of the Philippines.
+                <a href="https://www.officialgazette.gov.ph/"
+                   target="_blank" rel="noopener noreferrer">
+                    Official Gazette
+                </a>.
+            </li>
+            <li>
+                Encyclopaedia Britannica.
+                <a href="https://www.britannica.com/place/Philippines"
+                   target="_blank" rel="noopener noreferrer">
+                    Philippines: History and background
+                </a>.
+            </li>
+        </ol>
+    </section>
+
+    <a href="{{ url_for('home') }}" class="back-link bottom-link">
+        ← Return to the Historical Timeline
+    </a>
+</article>
+{% endblock %}

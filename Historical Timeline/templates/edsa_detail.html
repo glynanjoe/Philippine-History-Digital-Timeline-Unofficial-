@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+
+{% block title %}EDSA People Power Revolution | Historical Timeline{% endblock %}
+
+{% block content %}
+<article class="history-detail">
+
+    <a href="{{ url_for('home') }}" class="back-link">
+        ← Back to Historical Timeline
+    </a>
+
+    <header class="detail-header">
+        <p class="eyebrow">FEBRUARY 22–25, 1986 · CONTEMPORARY PHILIPPINES</p>
+
+        <img
+            src="{{ url_for('static', filename='images/edsa_people_power.jpg') }}"
+            alt="Historical photograph of the 1986 EDSA People Power Revolution"
+            class="detail-image"
+        >
+
+        <h1>EDSA People Power Revolution</h1>
+
+        <p class="detail-intro">
+            The EDSA People Power Revolution was a major event in Philippine
+            history in which millions of Filipinos peacefully demonstrated
+            for political change and helped restore democratic government
+            after years of authoritarian rule.
+        </p>
+    </header>
+
+    <section class="detail-section">
+        <h2>Historical Background</h2>
+
+        <p>
+            During the administration of
+            <a href="https://www.britannica.com/biography/Ferdinand-E-Marcos"
+               target="_blank" rel="noopener noreferrer">Ferdinand Marcos Sr.</a>,
+            the Philippines experienced martial law, restrictions on civil
+            liberties, and human rights abuses. Political opposition grew,
+            especially after the assassination of opposition leader
+            <a href="https://www.britannica.com/biography/Benigno-Aquino-Jr"
+               target="_blank" rel="noopener noreferrer">Benigno “Ninoy” Aquino Jr.</a>
+            in 1983.
+        </p>
+
+        <p>
+            In February 1986, a snap presidential election was held between
+            Marcos and
+            <a href="https://www.britannica.com/biography/Corazon-Aquino"
+               target="_blank" rel="noopener noreferrer">Corazon “Cory” Aquino</a>.
+            The election was disputed, with allegations of fraud and
+            irregularities. These events increased public calls for political change.
+        </p>
+
+        <p>
+            On February 22, 1986, key military officials, including
+            <a href="https://www.britannica.com/biography/Juan-Ponce-Enrile"
+               target="_blank" rel="noopener noreferrer">Juan Ponce Enrile</a>
+            and
+            <a href="https://www.britannica.com/biography/Fidel-V-Ramos"
+               target="_blank" rel="noopener noreferrer">Fidel V. Ramos</a>,
+            announced that they were withdrawing their support from Marcos.
+            Cardinal
+            <a href="https://www.britannica.com/biography/Jaime-Sin"
+               target="_blank" rel="noopener noreferrer">Jaime Sin</a>
+            encouraged people to support those who had broken with the government.
+            Large crowds gathered along Epifanio de los Santos Avenue (EDSA).
+        </p>
+
+        <p>
+            For several days, civilians, religious groups, and other citizens
+            gathered in peaceful demonstrations. Many offered food, prayers,
+            and support to the military defectors. On February 25, 1986,
+            Corazon Aquino was sworn in as president, while Marcos also held
+            an inauguration. Marcos and his family subsequently left the Philippines.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Historical Significance</h2>
+
+        <p>
+            The revolution brought an end to Marcos Sr.'s rule and opened
+            the way for the restoration of democratic institutions. Corazon
+            Aquino became president, and the government began rebuilding
+            democratic processes, including constitutional reform.
+        </p>
+
+        <p>
+            The event became internationally known as an example of mass
+            civic action. It demonstrated the influence of ordinary citizens,
+            religious communities, and groups within the military in shaping
+            the country's political future.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Connection to the Present</h2>
+
+        <p>
+            The EDSA People Power Revolution continues to remind Filipinos
+            that citizenship involves more than voting. People can help
+            shape the nation by staying informed, participating peacefully
+            in public life, respecting human rights, and holding leaders accountable.
+        </p>
+
+        <p>
+            Remembering this event also encourages people to examine
+            historical evidence carefully and recognize the importance
+            of protecting democratic freedoms.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>References</h2>
+
+        <ol>
+            <li>
+                Official Gazette of the Republic of the Philippines.
+                <em>Proclamation No. 3, s. 1986.</em>
+                <a href="https://www.officialgazette.gov.ph/1986/03/25/proclamation-no-3-s-1986/"
+                   target="_blank" rel="noopener noreferrer">
+                    Read Proclamation No. 3
+                </a>
+            </li>
+            <li>
+                Encyclopaedia Britannica.
+                <em>People Power Revolution.</em>
+                <a href="https://www.britannica.com/"
+                   target="_blank" rel="noopener noreferrer">
+                    Encyclopaedia Britannica
+                </a>
+            </li>
+        </ol>
+    </section>
+
+    <a href="{{ url_for('home') }}" class="back-link bottom-link">
+        ← Return to the Historical Timeline
+    </a>
+
+</article>
+{% endblock %}

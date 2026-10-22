@@ -1,0 +1,133 @@
+
+{% extends "base.html" %}
+
+{% block title %}Japanese Occupation | Historical Timeline{% endblock %}
+
+{% block content %}
+<article class="history-detail">
+    <a href="{{ url_for('home') }}" class="back-link">
+        ← Back to Historical Timeline
+    </a>
+
+    <header class="detail-header">
+        <p class="eyebrow">1942–1945 · WORLD WAR II</p>
+
+        <img
+            src="{{ url_for('static', filename='images/japanese_occupation.jpg') }}"
+            alt="Historical photograph related to the Japanese occupation"
+            class="detail-image"
+        >
+
+        <h1>Japanese Occupation of the Philippines</h1>
+
+        <p class="detail-intro">
+            The Japanese occupation during World War II brought
+            major political, economic, and social changes to the
+            Philippines and deeply affected Filipino civilians.
+        </p>
+    </header>
+
+    <section class="detail-section">
+        <h2>Historical Background</h2>
+
+        <p>
+            Japan attacked the Philippines on December 8, 1941,
+            Philippine time, shortly after the attack on Pearl Harbor.
+            Japanese forces advanced across the archipelago, and
+            Manila was occupied in January 1942.
+        </p>
+
+        <p>
+            The Philippine Commonwealth government was led by
+            President
+            <a href="https://legacy.senate.gov.ph/senators/former_senators/manuel_quezon.htm"
+               target="_blank"
+               rel="noopener noreferrer">Manuel L. Quezon</a>,
+            who operated with his government in exile in the United
+            States. Filipino and American forces continued fighting,
+            while resistance groups organized in different parts
+            of the country. Many civilians faced shortages, forced
+            labor, arrests, and other hardships during the occupation.
+        </p>
+
+        <p>
+            Allied forces returned to the Philippines in October
+            1944, beginning the campaign to liberate the country.
+            Fighting continued into 1945, and the Battle of Manila
+            caused extensive destruction and civilian deaths.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Historical Significance</h2>
+
+        <p>
+            The occupation was one of the most difficult periods
+            in modern Philippine history. It resulted in extensive
+            loss of life, damage to cities and infrastructure,
+            and major economic disruption.
+        </p>
+
+        <p>
+            The war also shaped the country's postwar reconstruction,
+            political development, and relations with the United
+            States before Philippine independence in 1946.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Connection to the Present</h2>
+
+        <p>
+            The experiences of wartime civilians and resistance
+            fighters remind Filipinos of the importance of peace,
+            human rights, and historical remembrance. Studying
+            this period helps later generations understand the
+            lasting effects of war on families, communities,
+            and national development.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>References</h2>
+
+        <ol>
+            <li>
+                National Historical Commission of the Philippines.
+                <a href="https://nhcp.gov.ph/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Official NHCP website
+                </a>.
+            </li>
+
+            <li>
+                Official Gazette of the Republic of the Philippines.
+                <a href="https://www.officialgazette.gov.ph/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Official Gazette
+                </a>.
+            </li>
+
+            <li>
+                United States Holocaust Memorial Museum.
+                <a href="https://encyclopedia.ushmm.org/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Holocaust Encyclopedia
+                </a>.
+                <p>
+                    Provides broader World War II context. Consult
+                    Philippine-specific historical sources to verify
+                    details about the occupation.
+                </p>
+            </li>
+        </ol>
+    </section>
+
+    <a href="{{ url_for('home') }}" class="back-link bottom-link">
+        ← Return to the Historical Timeline
+    </a>
+</article>
+{% endblock %}

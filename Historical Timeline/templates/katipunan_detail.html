@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+
+{% block title %}Founding of the Katipunan | Historical Timeline{% endblock %}
+
+{% block content %}
+<article class="history-detail">
+    <a href="{{ url_for('home') }}" class="back-link">
+        ← Back to Historical Timeline
+    </a>
+
+    <header class="detail-header">
+        <p class="eyebrow">JULY 7, 1892 · SPANISH COLONIAL PERIOD</p>
+
+        <img
+            src="{{ url_for('static', filename='images/katipunan.jpg') }}"
+            alt="Historical illustration of the Katipunan"
+            class="detail-image"
+        >
+
+        <h1>The Founding of the Katipunan</h1>
+
+        <p class="detail-intro">
+            The Katipunan was a secret revolutionary organization
+            founded to unite Filipinos in their struggle for
+            independence from Spanish colonial rule.
+        </p>
+    </header>
+
+    <section class="detail-section">
+        <h2>Historical Background</h2>
+
+        <p>
+            On July 7, 1892, Filipino patriots established the
+            Kataastaasan, Kagalanggalangang Katipunan ng mga Anak
+            ng Bayan, commonly known as the Katipunan. The founding
+            took place in Manila following the arrest and exile of
+            José Rizal, which discouraged hopes for peaceful reform.
+        </p>
+
+        <p>
+            Among its founding members were
+            <a href="https://philhistoricsites.nhcp.gov.ph/registry_database/andres-bonifacio-30-nobyembre-1863-10-mayo-1897/"
+               target="_blank" rel="noopener noreferrer">Andrés Bonifacio</a>,
+            Deodato Arellano, Ladislao Diwa, Teodoro Plata, and
+            Valentín Díaz. The organization operated secretly
+            because Spanish authorities opposed movements seeking
+            independence.
+        </p>
+
+        <p>
+            Its goal was to unite Filipinos and achieve freedom
+            from Spain. The Katipunan recruited members and spread
+            its ideals of patriotism and national independence.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Historical Significance</h2>
+
+        <p>
+            The Katipunan became a major force in the Philippine
+            Revolution, which began in 1896. Its members helped
+            transform the desire for reform and freedom into a
+            revolutionary movement against Spanish colonial rule.
+        </p>
+
+        <p>
+            The organization played an important role in the
+            development of Filipino nationalism and the continuing
+            struggle to establish an independent nation.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Connection to the Present</h2>
+
+        <p>
+            The story of the Katipunan teaches the value of unity,
+            courage, responsibility, and love of country. It also
+            reminds us that people can work together to seek
+            meaningful change and protect their rights.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>References</h2>
+
+        <ol>
+            <li>
+                National Commission for Culture and the Arts.
+                <a href="https://ncca.gov.ph/about-culture-and-arts/in-focus/andres-bonifacio-and-the-1896-revolution/"
+                   target="_blank" rel="noopener noreferrer">
+                    Andrés Bonifacio and the 1896 Revolution
+                </a>.
+            </li>
+            <li>
+                LawPhil Project.
+                <a href="https://lawphil.net/executive/proc/proc1992/proc_884_1992.html"
+                   target="_blank" rel="noopener noreferrer">
+                    Proclamation No. 884, declaring 1992 the centennial
+                    year of the founding of the Katipunan
+                </a>.
+            </li>
+            <li>
+                National Historical Commission of the Philippines.
+                <a href="https://philhistoricsites.nhcp.gov.ph/registry_database/andres-bonifacio-30-nobyembre-1863-10-mayo-1897/"
+                   target="_blank" rel="noopener noreferrer">
+                    Andrés Bonifacio historical marker
+                </a>.
+            </li>
+        </ol>
+    </section>
+
+    <a href="{{ url_for('home') }}" class="back-link bottom-link">
+        ← Return to the Historical Timeline
+    </a>
+</article>
+{% endblock %}

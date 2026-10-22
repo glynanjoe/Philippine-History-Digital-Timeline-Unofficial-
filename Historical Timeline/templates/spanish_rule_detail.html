@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block title %}Establishment of Spanish Rule in Cebu | Philippine History{% endblock %}
+
+{% block content %}
+
+<article class="history-detail">
+
+    <a href="{{ url_for('home') }}" class="back-link">
+        ← Back to Historical Timeline
+    </a>
+
+    <header class="detail-header">
+        <p class="eyebrow">1565 · SPANISH COLONIZATION</p>
+
+        <img
+            src="{{ url_for('static', filename='images/spanish_cebu.jpg') }}"
+            alt="Historical illustration of the Spanish expedition in Cebu"
+            class="detail-image"
+        >
+
+        <h1>Establishment of Spanish Rule in Cebu</h1>
+
+        <p class="detail-intro">
+            The arrival of Miguel López de Legazpi's expedition in
+            Cebu marked the beginning of a lasting Spanish colonial
+            presence in the Philippine archipelago.
+        </p>
+    </header>
+
+    <section class="detail-section">
+        <h2>Historical Background</h2>
+
+        <p>
+            In 1565, the Spanish expedition led by
+            <a
+                href="https://en.wikipedia.org/wiki/Miguel_L%C3%B3pez_de_Legazpi"
+                target="_blank"
+                rel="noopener noreferrer"
+            >Miguel López de Legazpi</a>
+            reached Cebu after crossing the Pacific from New Spain,
+            now Mexico. The expedition sought to establish a Spanish
+            settlement and expand Spain's influence in Asia.
+        </p>
+
+        <p>
+            The Spaniards encountered communities with established
+            leaders, trading networks, and political interests.
+            Relations between the expedition and local inhabitants
+            included negotiations as well as armed conflict.
+            The Spanish established a settlement in Cebu, which
+            became an important base for later expeditions.
+        </p>
+
+        <p>
+            The settlement marked a new stage in Spanish involvement
+            in the islands. Spanish authority did not immediately
+            extend across the entire archipelago; control expanded
+            unevenly over time and faced resistance from various
+            communities.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Historical Significance</h2>
+
+        <p>
+            The establishment of the Spanish settlement in Cebu
+            in 1565 is commonly treated as the beginning of
+            sustained Spanish colonization in the Philippines.
+            It provided a base for further expeditions, missionary
+            activity, and the development of colonial administration.
+        </p>
+
+        <p>
+            The event also began a long period of changing political,
+            economic, religious, and cultural relationships between
+            Spanish authorities and local communities.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Connection to the Present</h2>
+
+        <p>
+            Cebu's role in early Spanish colonization remains an
+            important part of Philippine history. Studying this
+            period helps us understand how colonial institutions
+            developed and how local communities responded to
+            foreign rule.
+        </p>
+
+        <p>
+            It also reminds us that colonization was a process
+            that affected different communities in different ways,
+            rather than a single event that changed every island
+            at the same time.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>References</h2>
+
+        <ol>
+            <li>
+                Blair, E. H., and Robertson, J. A., editors.
+                (1903–1909).
+                <em>The Philippine Islands, 1493–1898</em>.
+                This collection contains translated historical
+                documents relating to the Spanish colonial period.
+                <a
+                    href="https://www.gutenberg.org/ebooks/author/103"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Explore digitized volumes
+                </a>
+            </li>
+
+            <li>
+                Encyclopaedia Britannica.
+                <em>Philippines: The Spanish Period</em>.
+                <a
+                    href="https://www.britannica.com/place/Philippines/The-Spanish-period"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Read the historical overview
+                </a>
+            </li>
+        </ol>
+    </section>
+
+    <a href="{{ url_for('home') }}" class="back-link bottom-link">
+        ← Return to the Historical Timeline
+    </a>
+
+</article>
+
+{% endblock %}

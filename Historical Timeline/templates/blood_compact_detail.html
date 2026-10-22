@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block title %}The Blood Compact of 1565 | Philippine History{% endblock %}
+
+{% block content %}
+
+<article class="history-detail">
+
+    <a href="{{ url_for('home') }}" class="back-link">
+        ← Back to Historical Timeline
+    </a>
+
+    <header class="detail-header">
+        <p class="eyebrow">1565 · EARLY SPANISH PERIOD</p>
+
+        <img
+            src="{{ url_for('static', filename='images/blood_compact.jpg') }}"
+            alt="Historical illustration of the Blood Compact"
+            class="detail-image"
+        >
+
+        <h1>The Blood Compact of 1565</h1>
+
+        <p class="detail-intro">
+            A symbolic agreement between local and Spanish leaders
+            that became an important episode in early Philippine-Spanish relations.
+        </p>
+    </header>
+
+    <section class="detail-section">
+        <h2>Historical Background</h2>
+    <p>
+        In March 1565, Spanish expedition leader
+        <a href="https://en.wikipedia.org/wiki/Miguel_L%C3%B3pez_de_Legazpi"
+        target="_blank" rel="noopener noreferrer">
+            Miguel López de Legazpi
+        </a>
+        arrived in the Philippines. During the expedition, the Spaniards
+        established contact with local communities and leaders as they
+        sought alliances and a foothold in the archipelago.
+    </p>
+
+    <p>
+        One well-known blood compact was made between
+        <a href="https://en.wikipedia.org/wiki/Datu_Sikatuna"
+        target="_blank" rel="noopener noreferrer">
+            Datu Sikatuna
+        </a>,
+        a local leader in Bohol, and Legazpi's expedition.
+        The ceremony involved mixing drops of blood with wine and
+        drinking the mixture as a sign of friendship and agreement.
+    </p>
+
+        <p>
+            The blood compact is remembered as a traditional way of
+            formalizing an agreement. However, the event should also
+            be understood within the broader context of Spanish expansion
+            and the different interests of local communities.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Historical Significance</h2>
+
+        <p>
+            The blood compact became a symbol of friendship, trust,
+            and diplomatic relations between local leaders and the
+            Spanish expedition. It is often discussed as an example
+            of how agreements were made between communities with
+            different customs and political interests.
+        </p>
+
+        <p>
+            The agreement also belongs to the early period of Spanish
+            expansion in the Philippines. Although such ceremonies
+            could establish alliances, they did not mean that all
+            communities agreed to Spanish rule or that later relations
+            were always peaceful.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Connection to the Present</h2>
+
+        <p>
+            The Blood Compact remains part of Philippine historical
+            memory and is commemorated in Bohol. It encourages us
+            to learn about diplomacy, cultural traditions, and the
+            importance of understanding historical events from
+            different perspectives.
+        </p>
+
+        <p>
+            Studying this event also reminds us to examine the
+            historical context of agreements and consider the
+            perspectives of all the people involved.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>References</h2>
+
+        <ol>
+            <li>
+                National Historical Commission of the Philippines.
+                Historical materials and markers concerning the
+                Blood Compact in Bohol.
+                <a
+                    href="https://philhistoricsites.nhcp.gov.ph/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    NHCP Registry of Historic Sites and Structures
+                </a>
+            </li>
+
+            <li>
+                Blair, E. H., and Robertson, J. A. (Editors).
+                (1903–1909).
+                <em>The Philippine Islands, 1493–1898</em>.
+                A collection of translated historical documents
+                from the early Spanish period.
+                <a
+                    href="https://www.gutenberg.org/ebooks/author/103"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Explore digitized historical volumes
+                </a>
+            </li>
+        </ol>
+    </section>
+
+    <a href="{{ url_for('home') }}" class="back-link bottom-link">
+        ← Return to the Historical Timeline
+    </a>
+
+</article>
+
+{% endblock %}

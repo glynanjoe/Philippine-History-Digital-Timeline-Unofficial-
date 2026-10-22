@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+{% block title %}Philippine Independence in 1946 | Historical Timeline{% endblock %}
+
+{% block content %}
+<article class="history-detail">
+    <a href="{{ url_for('home') }}" class="back-link">
+        ← Back to Historical Timeline
+    </a>
+
+    <header class="detail-header">
+        <p class="eyebrow">JULY 4, 1946 · POSTWAR PHILIPPINES</p>
+
+        <img
+            src="{{ url_for('static', filename='images/philippine_independence_1946.jpg') }}"
+            alt="Historical event commemorating Philippine independence in 1946"
+            class="detail-image"
+        >
+
+        <h1>Philippine Independence from the United States</h1>
+
+        <p class="detail-intro">
+            On July 4, 1946, the Philippines became an independent
+            republic following decades of American colonial
+            administration and the destruction of World War II.
+        </p>
+    </header>
+
+    <section class="detail-section">
+        <h2>Historical Background</h2>
+
+        <p>
+            After the Spanish-American War, the Philippines came
+            under American control. The Philippine Commonwealth
+            was established in 1935 as part of a process intended
+            to lead toward independence. However, World War II
+            interrupted this transition when Japan occupied much
+            of the country.
+        </p>
+
+        <p>
+            After the war, the Philippines faced the difficult
+            task of rebuilding communities, cities, infrastructure,
+            and its economy. On July 4, 1946, the United States
+            formally recognized Philippine independence under
+            the Treaty of Manila.
+        </p>
+
+        <p>
+            The independent republic's first president was
+            <a href="https://www.officialgazette.gov.ph/"
+               target="_blank"
+               rel="noopener noreferrer">Manuel Roxas</a>.
+            His administration faced the challenges of
+            reconstruction and establishing the institutions
+            of the new republic.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Historical Significance</h2>
+
+        <p>
+            Independence marked the formal end of American
+            colonial rule and the beginning of a new period
+            of Philippine self-government. It was a major
+            milestone in the long history of the country's
+            struggle for national sovereignty.
+        </p>
+
+        <p>
+            However, political independence did not immediately
+            solve every problem. The country still faced
+            economic difficulties, social inequality, and
+            debates over its continuing relationship with
+            the United States.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Connection to the Present</h2>
+
+        <p>
+            Philippine independence remains important to
+            discussions about national identity, democracy,
+            economic independence, and foreign relations.
+            Studying 1946 helps explain that building a
+            sovereign nation continues beyond the formal
+            declaration or recognition of independence.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>References</h2>
+
+        <ol>
+            <li>
+                U.S. Department of State, Office of the Historian.
+                <a href="https://history.state.gov/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Office of the Historian
+                </a>.
+            </li>
+
+            <li>
+                Official Gazette of the Republic of the Philippines.
+                <a href="https://www.officialgazette.gov.ph/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Official Gazette
+                </a>.
+            </li>
+
+            <li>
+                Philippine Senate.
+                <a href="https://legacy.senate.gov.ph/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Official Senate website
+                </a>.
+            </li>
+        </ol>
+    </section>
+
+    <a href="{{ url_for('home') }}" class="back-link bottom-link">
+        ← Return to the Historical Timeline
+    </a>
+</article>
+{% endblock %}

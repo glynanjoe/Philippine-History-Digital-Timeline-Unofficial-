@@ -1,0 +1,823 @@
+
+{% extends "base.html" %}
+
+{% block title %}Historical Timeline | Philippine History{% endblock %}
+
+{% block content %}
+
+<section class="timeline-hero">
+    <p class="eyebrow">READINGS IN PHILIPPINE HISTORY</p>
+    <h1>The Story of the Philippines</h1>
+
+    <p class="hero-description">
+        Discover the important events that shaped the
+        history and identity of the Filipino nation.
+    </p>
+
+    <a href="#timeline" class="explore-button">
+        Explore the Timeline ↓
+    </a>
+    <div class="hero-author">
+    <span>Made by: <strong>Glyn Anjoe M. Remotigue</strong></span>
+    <small>BSIT 1 - Section 1</small>
+</div>
+</section>
+
+<section class="timeline-section" id="timeline">
+
+    <div class="section-heading">
+        <p class="eyebrow">A JOURNEY THROUGH TIME</p>
+        <h2>Historical Timeline</h2>
+        <p>Explore significant events in Philippine history.</p>
+    </div>
+
+    <div class="timeline">
+        
+        <!-- EVENT 11: EARLY PHILIPPINE SOCIETIES -->
+        <article class="timeline-card">
+            <div class="timeline-date">Before 1521</div>
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <img src="{{ url_for('static', filename='images/early_societies.jpg') }}"
+                    alt="Illustration of early Philippine communities"
+                    class="timeline-image">
+
+                <span class="era-label">Precolonial Period</span>
+                <h3>Early Philippine Societies and Barangays</h3>
+
+                <p>
+                    Before the arrival of Spanish expeditions, the Philippine
+                    archipelago was home to diverse communities with their
+                    own leaders, customs, beliefs, and systems of trade.
+                    Many communities were organized into barangays, often
+                    led by a datu. Filipinos traded with neighboring regions
+                    and developed their own cultural traditions.
+                </p>
+
+                <div class="significance">
+                    <strong>Historical Significance</strong>
+                    <p>
+                        Early Philippine societies show that Filipinos had
+                        established forms of leadership, social organization,
+                        economic activity, and culture before Spanish rule.
+                    </p>
+                </div>
+
+                <div class="modern-connection">
+                    <strong>Connection to Today</strong>
+                    <p>
+                        Precolonial history helps Filipinos appreciate the
+                        country's diverse cultural heritage and understand
+                        that Philippine society existed long before
+                        colonization.
+                    </p>
+
+                    <a href="{{ url_for('early_societies_detail') }}" class="read-more">
+                        Read Full History <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- EVENT 1: ARRIVAL OF MAGELLAN -->
+
+        <article class="timeline-card">
+
+            <div class="timeline-date">1521</div>
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <img
+                    src="{{ url_for('static', filename='images/arrival.jpg') }}"
+                    alt="Historical illustration of the Magellan expedition"
+                    class="timeline-image"
+                >
+
+                <span class="era-label">Spanish Contact</span>
+
+                <h3>Arrival of the Magellan Expedition</h3>
+
+                <p>
+                    In March 1521, the expedition led by Ferdinand
+                    Magellan reached the Philippine archipelago.
+                    The expedition encountered local communities
+                    with their own leaders, customs, and trading
+                    networks. Magellan was killed at Mactan on
+                    April 27, 1521, during a conflict involving
+                    local forces associated with Lapulapu.
+                </p>
+
+                <div class="significance">
+                    <strong>Historical Significance</strong>
+                    <p>
+                        The expedition marked an important moment
+                        in European contact with the Philippines
+                        and preceded the establishment of Spanish
+                        colonial rule.
+                    </p>
+                </div>
+
+                <div class="modern-connection">
+                    <strong>Connection to Today</strong>
+                    <p>
+                        This event reminds us to study history
+                        from different perspectives, including
+                        those of local communities and their leaders.
+                    </p>
+
+                    <a
+                        href="{{ url_for('magellan_detail') }}"
+                        class="read-more"
+                    >
+                        Read Full History <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- EVENT 2: BLOOD COMPACT -->
+
+        <article class="timeline-card">
+
+            <div class="timeline-date">1565</div>
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <img
+                    src="{{ url_for('static', filename='images/blood_compact.jpg') }}"
+                    alt="Historical illustration of the Blood Compact in Bohol"
+                    class="timeline-image"
+                >
+
+                <span class="era-label">Early Spanish Period</span>
+
+                <h3>The Blood Compact of 1565</h3>
+
+                <p>
+                    In 1565, a blood compact was made between
+                    Datu Sikatuna of Bohol and Miguel López de
+                    Legazpi, the leader of a Spanish expedition.
+                    The ceremony symbolized an agreement of
+                    friendship and alliance between the participants.
+                </p>
+
+                <div class="significance">
+                    <strong>Historical Significance</strong>
+                    <p>
+                        The blood compact represents an important
+                        episode in early relations between Spanish
+                        expedition members and local leaders.
+                        It also provides context for the growing
+                        Spanish presence in the archipelago.
+                    </p>
+                </div>
+
+                <div class="modern-connection">
+                    <strong>Connection to Today</strong>
+                    <p>
+                        The event encourages us to learn about
+                        traditional diplomacy, cultural practices,
+                        and the different perspectives involved
+                        in Philippine history.
+                    </p>
+
+                    <a
+                        href="{{ url_for('blood_compact_detail') }}"
+                        class="read-more"
+                    >
+                        Read Full History <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+        
+        <!-- EVENT 3: ESTABLISHMENT OF SPANISH RULE IN CEBU -->
+
+        <article class="timeline-card">
+
+            <div class="timeline-date">1565</div>
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <img
+                    src="{{ url_for('static', filename='images/spanish_cebu.jpg') }}"
+                    alt="Historical illustration of the Spanish settlement in Cebu"
+                    class="timeline-image"
+                >
+
+                <span class="era-label">Spanish Colonial Period</span>
+
+                <h3>Establishment of Spanish Rule in Cebu</h3>
+
+                <p>
+                    In 1565, Miguel López de Legazpi and his
+                    expedition established a Spanish settlement
+                    in Cebu. This became an important base for
+                    Spain's efforts to expand its influence in
+                    the Philippine archipelago.
+                </p>
+
+                <div class="significance">
+                    <strong>Historical Significance</strong>
+                    <p>
+                        The settlement marked the beginning of
+                        sustained Spanish colonization. Spanish
+                        control expanded gradually and was not
+                        established over every community at once.
+                    </p>
+                </div>
+
+                <div class="modern-connection">
+                    <strong>Connection to Today</strong>
+                    <p>
+                        The event helps explain the Spanish
+                        influence on Philippine religion,
+                        language, government, and culture.
+                    </p>
+
+                    <a
+                        href="{{ url_for('spanish_rule_detail') }}"
+                        class="read-more"
+                    >
+                        Read Full History <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+        
+        <!-- EVENT 4: FOUNDING OF MANILA -->
+
+        <article class="timeline-card">
+            <div class="timeline-date">1571</div>
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <img
+                    src="{{ url_for('static', filename='images/founding_manila.jpg') }}"
+                    alt="Historical illustration of early Manila"
+                    class="timeline-image"
+                >
+
+                <span class="era-label">Spanish Colonial Period</span>
+                <h3>The Founding of Manila</h3>
+
+                <p>
+                    In 1571, Miguel López de Legazpi established
+                    Manila as the capital of Spanish colonial
+                    government in the Philippines. Manila was
+                    already an important settlement and trading
+                    center before the Spanish takeover.
+                </p>
+
+                <div class="significance">
+                    <strong>Historical Significance</strong>
+                    <p>
+                        Manila became the center of Spanish
+                        colonial administration and an important
+                        port for trade between Asia and the
+                        Spanish Empire.
+                    </p>
+                </div>
+
+                <div class="modern-connection">
+                    <strong>Connection to Today</strong>
+                    <p>
+                        Manila remains an important political,
+                        economic, and cultural center of the
+                        Philippines.
+                    </p>
+
+                    <a
+                        href="{{ url_for('manila_detail') }}"
+                        class="read-more"
+                    >
+                        Read Full History <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+        
+        <!-- EVENT 5: MANILA-ACAPULCO GALLEON TRADE -->
+
+        <article class="timeline-card">
+
+            <div class="timeline-date">1565–1815</div>
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <img
+                    src="{{ url_for('static', filename='images/galleon_trade.jpg') }}"
+                    alt="Historical illustration of a Spanish galleon sailing across the ocean"
+                    class="timeline-image"
+                >
+
+                <span class="era-label">Spanish Colonial Period</span>
+
+                <h3>The Manila–Acapulco Galleon Trade</h3>
+
+                <p>
+                    The Manila–Acapulco Galleon Trade connected
+                    Manila in the Philippines with Acapulco in
+                    Mexico across the Pacific Ocean. Beginning
+                    in 1565, the trade carried Asian goods such
+                    as silk and spices to the Americas, while
+                    silver from Mexico helped pay for these goods.
+                    The trade continued until 1815.
+                </p>
+
+                <div class="significance">
+                    <strong>Historical Significance</strong>
+                    <p>
+                        The trade made Manila an important center
+                        of international commerce. It connected
+                        Asia and the Americas but also served
+                        Spanish colonial interests and influenced
+                        the lives and economies of local communities.
+                    </p>
+                </div>
+
+                <div class="modern-connection">
+                    <strong>Connection to Today</strong>
+                    <p>
+                        The galleon trade helps explain the
+                        Philippines' long history of international
+                        exchange and the cultural influences
+                        connecting the country with other nations.
+                    </p>
+
+                    <a
+                        href="{{ url_for('galleon_detail') }}"
+                        class="read-more"
+                    >
+                        Read Full History <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+
+    
+        <!-- EVENT 6: CAVITE MUTINY -->
+
+        <article class="timeline-card">
+
+            <div class="timeline-date">1872</div>
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <img
+                    src="{{ url_for('static', filename='images/cavite_mutiny.jpg') }}"
+                    alt="Historical illustration representing the Cavite Mutiny of 1872"
+                    class="timeline-image"
+                >
+
+                <span class="era-label">Spanish Colonial Period</span>
+
+                <h3>The Cavite Mutiny of 1872</h3>
+
+                <p>
+                    On January 20, 1872, Filipino military personnel
+                    and workers at the Cavite arsenal took part in
+                    a short-lived uprising against Spanish colonial
+                    authorities. The revolt was suppressed, and
+                    colonial officials used the incident to justify
+                    arrests and punishments against people suspected
+                    of supporting reform.
+                </p>
+
+                <div class="significance">
+                    <strong>Historical Significance</strong>
+                    <p>
+                        The event intensified tensions under Spanish
+                        rule. The authorities linked the mutiny to
+                        Filipino reform advocates, contributing to
+                        the prosecution and execution of the three
+                        priests known as GOMBURZA.
+                    </p>
+                </div>
+
+                <div class="modern-connection">
+                    <strong>Connection to Today</strong>
+                    <p>
+                        The Cavite Mutiny reminds us to examine
+                        historical events through different accounts
+                        and to question how those in power interpret
+                        events and justify their decisions.
+                    </p>
+
+                    <a
+                        href="{{ url_for('cavite_mutiny_detail') }}"
+                        class="read-more"
+                    >
+                        Read Full History <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+        </article>
+        <!-- EVENT 7: EXECUTION OF GOMBURZA -->
+
+        <article class="timeline-card">
+
+            <div class="timeline-date">February 17, 1872</div>
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <img
+                    src="{{ url_for('static', filename='images/gomburza.jpg') }}"
+                    alt="Historical illustration of the GOMBURZA priests"
+                    class="timeline-image"
+                >
+
+                <span class="era-label">Spanish Colonial Period</span>
+
+                <h3>The Execution of GOMBURZA</h3>
+
+                <p>
+                    On February 17, 1872, three Filipino secular priests
+                    were executed by Spanish colonial authorities after
+                    being accused of involvement in the Cavite Mutiny.
+                    Their case remains a significant and controversial
+                    episode in Philippine history.
+                </p>
+
+                <div class="significance">
+                    <strong>Historical Significance</strong>
+                    <p>
+                        Their deaths became a symbol of colonial injustice
+                        and helped strengthen Filipino national consciousness.
+                    </p>
+                </div>
+
+                <div class="modern-connection">
+                    <strong>Connection to Today</strong>
+                    <p>
+                        Their story reminds us of the importance of justice,
+                        fairness, and examining historical events critically.
+                    </p>
+                </div>
+
+                <a
+                    href="{{ url_for('gomburza_detail') }}"
+                    class="read-more"
+                >
+                    Read Full History <span>→</span>
+                </a>
+
+            </div>
+        </article>
+        
+        <!-- EVENT 8: FOUNDING OF THE KATIPUNAN -->
+        <article class="timeline-card">
+            <div class="timeline-date">July 7, 1892</div>
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <img src="{{ url_for('static', filename='images/katipunan.jpg') }}"
+                    alt="Historical illustration of the Katipunan"
+                    class="timeline-image">
+
+                <span class="era-label">Spanish Colonial Period</span>
+                <h3>The Founding of the Katipunan</h3>
+
+                <p>
+                    On July 7, 1892, Andrés Bonifacio and other Filipino
+                    patriots founded the Katipunan, a secret organization
+                    dedicated to achieving Philippine independence from
+                    Spanish colonial rule.
+                </p>
+
+                <div class="significance">
+                    <strong>Historical Significance</strong>
+                    <p>
+                        The Katipunan united Filipinos who wanted freedom
+                        and later became a major force in the Philippine
+                        Revolution of 1896.
+                    </p>
+                </div>
+
+                <div class="modern-connection">
+                    <strong>Connection to Today</strong>
+                    <p>
+                        The Katipunan reminds Filipinos of the importance
+                        of courage, unity, patriotism, and the struggle
+                        for freedom.
+                    </p>
+
+                    <a href="{{ url_for('katipunan_detail') }}" class="read-more">
+                        Read Full History <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+        
+        <!-- EVENT 9: PHILIPPINE DECLARATION OF INDEPENDENCE -->
+        <article class="timeline-card">
+            <div class="timeline-date">June 12, 1898</div>
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <img src="{{ url_for('static', filename='images/independence.jpg') }}"
+                    alt="Historical illustration of the Philippine Declaration of Independence"
+                    class="timeline-image">
+
+                <span class="era-label">Philippine Revolution</span>
+                <h3>The Philippine Declaration of Independence</h3>
+
+                <p>
+                    On June 12, 1898, Emilio Aguinaldo proclaimed the
+                    independence of the Philippines from Spanish colonial
+                    rule in Kawit, Cavite. The Philippine flag was raised,
+                    and the national anthem was performed during the ceremony.
+                </p>
+
+                <div class="significance">
+                    <strong>Historical Significance</strong>
+                    <p>
+                        The declaration represented the Filipino people's
+                        desire for freedom and their effort to establish
+                        an independent nation.
+                    </p>
+                </div>
+
+                <div class="modern-connection">
+                    <strong>Connection to Today</strong>
+                    <p>
+                        June 12 is celebrated as Philippine Independence Day,
+                        reminding Filipinos of the sacrifices made for
+                        freedom and national identity.
+                    </p>
+
+                    <a href="{{ url_for('independence_detail') }}" class="read-more">
+                        Read Full History <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+        
+        <!-- EVENT 10: INAUGURATION OF THE FIRST PHILIPPINE REPUBLIC -->
+        <article class="timeline-card">
+            <div class="timeline-date">January 23, 1899</div>
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <img src="{{ url_for('static', filename='images/first_republic.jpg') }}"
+                    alt="Historical illustration of the First Philippine Republic"
+                    class="timeline-image">
+
+                <span class="era-label">First Philippine Republic</span>
+                <h3>Inauguration of the First Philippine Republic</h3>
+
+                <p>
+                    On January 23, 1899, the First Philippine Republic
+                    was inaugurated in Malolos, Bulacan. Emilio Aguinaldo
+                    became its president, marking an important step toward
+                    establishing a Filipino-led government.
+                </p>
+
+                <div class="significance">
+                    <strong>Historical Significance</strong>
+                    <p>
+                        The inauguration represented the establishment
+                        of a republic with a constitution and its own
+                        government during the struggle for independence.
+                    </p>
+                </div>
+
+                <div class="modern-connection">
+                    <strong>Connection to Today</strong>
+                    <p>
+                        The First Philippine Republic reminds Filipinos
+                        of the importance of self-government, democracy,
+                        national unity, and protecting the country's freedom.
+                    </p>
+
+                    <a href="{{ url_for('first_republic_detail') }}" class="read-more">
+                        Read Full History <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+        
+        <!-- EVENT 12: JAPANESE OCCUPATION -->
+        <article class="timeline-card">
+            <div class="timeline-date">1942–1945</div>
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <img src="{{ url_for('static', filename='images/japanese_occupation.jpg') }}"
+                    alt="Historical photograph related to the Japanese occupation of the Philippines"
+                    class="timeline-image">
+
+                <span class="era-label">World War II</span>
+                <h3>Japanese Occupation of the Philippines</h3>
+
+                <p>
+                    During World War II, Japanese forces invaded the
+                    Philippines in December 1941 and occupied much of the
+                    country. Manila fell to Japanese forces in January 1942.
+                    Filipinos experienced shortages, violence, and major
+                    disruptions to daily life, while Filipino and Allied
+                    forces continued resistance. The occupation ended as
+                    Allied forces regained control of the country in 1945.
+                </p>
+
+                <div class="significance">
+                    <strong>Historical Significance</strong>
+                    <p>
+                        The occupation caused widespread suffering and
+                        destruction, shaped the country's wartime experience,
+                        and influenced the Philippines' postwar recovery
+                        and relationship with the United States.
+                    </p>
+                </div>
+
+                <div class="modern-connection">
+                    <strong>Connection to Today</strong>
+                    <p>
+                        This period reminds Filipinos of the cost of war,
+                        the importance of peace, and the need to preserve
+                        historical memories and honor those affected by
+                        the conflict.
+                    </p>
+
+                    <a href="{{ url_for('japanese_occupation_detail') }}" class="read-more">
+                        Read Full History <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+        
+        <!-- EVENT 13: PHILIPPINE INDEPENDENCE IN 1946 -->
+        <article class="timeline-card">
+            <div class="timeline-date">July 4, 1946</div>
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+                <img
+                    src="{{ url_for('static', filename='images/philippine_independence_1946.jpg') }}"
+                    alt="Philippine independence in 1946"
+                    class="timeline-image"
+                >
+
+                <span class="era-label">Postwar Philippines</span>
+                <h3>Philippine Independence from the United States</h3>
+
+                <p>
+                    On July 4, 1946, the Philippines officially gained
+                    independence from the United States after decades
+                    of American colonial administration and the destruction
+                    caused by World War II. The transfer of sovereignty
+                    was recognized through the Treaty of Manila, establishing
+                    the independent Third Philippine Republic.
+                </p>
+
+                <div class="significance">
+                    <strong>Historical Significance</strong>
+                    <p>
+                        Independence marked the formal end of American
+                        colonial rule and the beginning of a new period
+                        of Philippine self-government. However, the country
+                        still faced the challenges of rebuilding its economy
+                        and communities after the war.
+                    </p>
+                </div>
+
+                <div class="modern-connection">
+                    <strong>Connection to Today</strong>
+                    <p>
+                        This event reminds Filipinos of the importance
+                        of national sovereignty, democratic institutions,
+                        and the responsibility to protect the country's
+                        freedom and independence.
+                    </p>
+
+                    <a href="{{ url_for('independence_1946_detail') }}" class="read-more">
+                        Read Full History <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <!-- EVENT 14: EDSA PEOPLE POWER REVOLUTION -->
+        <article class="timeline-card">
+            <div class="timeline-date">February 22–25, 1986</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <img src="{{ url_for('static', filename='images/edsa_people_power.jpg') }}"
+                    alt="EDSA People Power Revolution of 1986"
+                    class="timeline-image">
+
+                <span class="era-label">Contemporary Philippines</span>
+
+                <h3>EDSA People Power Revolution</h3>
+
+                <p>
+                    From February 22 to 25, 1986, thousands of Filipinos
+                    gathered along Epifanio de los Santos Avenue (EDSA)
+                    to protest against the government of President Ferdinand
+                    Marcos Sr. The demonstrations followed a disputed
+                    presidential election and calls for political change.
+                    Through largely peaceful mass demonstrations, citizens,
+                    religious groups, and military members who withdrew
+                    their support helped bring an end to Marcos's rule.
+                </p>
+
+                <div class="significance">
+                    <strong>Historical Significance</strong>
+                    <p>
+                        The revolution ended the Marcos administration
+                        and led to the presidency of Corazon Aquino.
+                        It became a major moment in Philippine history,
+                        showing how collective action could help restore
+                        democratic government.
+                    </p>
+                </div>
+
+                <div class="modern-connection">
+                    <strong>Connection to Today</strong>
+                    <p>
+                        EDSA reminds Filipinos of the importance of
+                        democracy, peaceful protest, responsible citizenship,
+                        and protecting people's rights and freedoms.
+                    </p>
+
+                    <a href="{{ url_for('edsa_detail') }}" class="read-more">
+                        Read Full History <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </div>
+    
+<section class="detail-section conclusion">
+    <h2>Conclusion: The Continuing Influence of Philippine History</h2>
+
+    <p>
+        Philippine history is more than a record of past events. It helps
+        explain the country's identity, struggles, and responsibilities
+        today. From early communities to the modern republic, Filipinos
+        have continually shaped their society through cooperation,
+        resistance, and the pursuit of freedom.
+    </p>
+
+    <p>
+        The Cavite Mutiny of 1872 and the execution of GOMBURZA influenced
+        the growth of Filipino nationalism. Their deaths became important
+        symbols in later discussions of injustice and colonial rule.
+        Today, this period reminds Filipinos to examine abuses of power,
+        value fairness, and learn how historical experiences can inspire
+        movements for change.
+    </p>
+
+    <p>
+        The Declaration of Independence on June 12, 1898, expressed the
+        revolutionary government's desire for self-rule. Although the
+        country still faced foreign intervention and further conflict,
+        the declaration remains central to national identity. Independence
+        celebrations today encourage citizens to appreciate sovereignty
+        and understand that nation-building requires continued effort.
+    </p>
+
+    <p>
+        The EDSA People Power Revolution of February 1986 demonstrated
+        how collective public action could help bring political change.
+        Its legacy remains relevant when Filipinos discuss democracy,
+        human rights, peaceful protest, and government accountability.
+        It also reminds citizens that democratic institutions need
+        continued protection and participation.
+    </p>
+
+    <p>
+        Studying these events together shows that the past and present
+        are connected. Historical documents, credible research, and
+        careful evaluation of evidence help us understand not only what
+        happened, but why it matters. By remembering the lessons of
+        nationalism, independence, and people power, Filipinos can make
+        more informed decisions and contribute to a fairer, more
+        responsible, and democratic society.
+    </p>
+</section>
+
+</section>
+
+<section class="timeline-ending">
+    <p class="eyebrow">OUR HISTORY, OUR IDENTITY</p>
+    <h2>The Past Helps Us Understand the Present</h2>
+    <p>
+        Understanding our past helps us appreciate the struggles,
+        decisions, and achievements that shaped the Philippines.
+    </p>
+</section>
+
+{% endblock %}

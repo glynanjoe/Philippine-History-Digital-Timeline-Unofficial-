@@ -1,0 +1,155 @@
+
+{% extends "base.html" %}
+
+{% block title %}Arrival of the Magellan Expedition | Philippine History{% endblock %}
+
+{% block content %}
+
+<article class="history-detail">
+
+    <a href="{{ url_for('home') }}" class="back-link">
+        ← Back to Historical Timeline
+    </a>
+
+    <header class="detail-header">
+        <p class="eyebrow">1521 · SPANISH CONTACT</p>
+
+        <img
+            src="{{ url_for('static', filename='images/arrival.jpg') }}"
+            alt="Historical illustration of the Magellan expedition"
+            class="detail-image"
+        >
+
+        <h1>Arrival of the Magellan Expedition</h1>
+
+        <p class="detail-intro">
+            An encounter that became a significant turning point
+            in the history of the Philippine archipelago.
+        </p>
+    </header>
+
+    <section class="detail-section">
+        <h2>Historical Background</h2>
+
+        <p>
+            In March 1521, the expedition led by Portuguese explorer
+            <a
+                href="https://en.wikipedia.org/wiki/Ferdinand_Magellan"
+                target="_blank"
+                rel="noopener noreferrer"
+            >Ferdinand Magellan</a>, sailing for Spain, reached the
+            Philippine archipelago during its voyage across the Pacific.
+            The expedition encountered communities that already had
+            established leadership, local customs, and regional
+            trading relationships.
+        </p>
+
+        <p>
+            The expedition's arrival did not mean that the islands
+            were an undiscovered or uninhabited land. The archipelago
+            was home to diverse societies with their own political
+            systems, economic activities, and cultural traditions.
+            Contacts between the expedition and local leaders
+            included diplomacy, exchange, and conflict.
+        </p>
+
+        <p>
+            Magellan became involved in a conflict at Mactan. On
+            April 27, 1521, he was killed in a battle against forces
+            associated with Lapulapu. The remaining expedition
+            continued its voyage under different leadership.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Historical Significance</h2>
+
+        <p>
+            The expedition marked an important episode in the
+            relationship between Europe and the Philippine
+            archipelago. Subsequent Spanish expeditions and
+            colonization eventually led to lasting political,
+            religious, economic, and cultural changes in many
+            parts of the islands.
+        </p>
+
+        <p>
+            The events at Mactan also highlight the agency of local
+            leaders and communities. Their actions were important
+            in shaping how they responded to foreign expeditions
+            and attempts to establish influence.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Connection to the Present</h2>
+
+        <p>
+            Studying the Magellan expedition encourages us to examine
+            historical events from multiple perspectives rather than
+            relying on a single account. It also helps us appreciate
+            the history and agency of local communities, including
+            those who resisted foreign intervention.
+        </p>
+
+        <p>
+            Today, the events of 1521 continue to shape discussions
+            about cultural identity, historical memory, colonialism,
+            and how Philippine history should be taught.
+        </p>
+    </section>
+
+    
+    <section class="detail-section">
+        <h2>References</h2>
+
+        <ol>
+            <li>
+                Pigafetta, A. (1874). <em>The First Voyage Round the World,
+                by Magellan</em>. Translated from the accounts of Pigafetta
+                and other contemporary writers by Lord Stanley of Alderley.
+                Hakluyt Society.
+                <a
+                    href="https://www.gutenberg.org/ebooks/74723"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Read the digitized book
+                </a>
+            </li>
+
+            <li>
+                National Historical Commission of the Philippines.
+                (2021). <em>Mactan – Ruta ng Ekspedisyon
+                Magallanes-Elcano sa Pilipinas</em>.
+                <a
+                    href="https://philhistoricsites.nhcp.gov.ph/registry_database/mactan-ruta-ng-ekspedisyon-magallanes-elcano-sa-pilipinas/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View the historical marker record
+                </a>
+            </li>
+
+            <li>
+                National Quincentennial Committee. (2021).
+                <em>Battle of Mactan: Beyond Textbooks</em>.
+                <a
+                    href="https://www.nqc.gov.ph/en/resources/battle-of-mactan-beyond-textbooks/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Read the historical discussion
+                </a>
+            </li>
+        </ol>
+    </section>
+
+
+    <a href="{{ url_for('home') }}" class="back-link bottom-link">
+        ← Return to the Historical Timeline
+    </a>
+
+</article>
+
+{% endblock %}

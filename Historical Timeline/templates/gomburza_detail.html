@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+
+{% block title %}The Execution of GOMBURZA | Philippine History{% endblock %}
+
+{% block content %}
+
+<article class="history-detail">
+
+    <a href="{{ url_for('home') }}" class="back-link">
+        ← Back to Historical Timeline
+    </a>
+
+    <header class="detail-header">
+        <p class="eyebrow">1872 · SPANISH COLONIAL PERIOD</p>
+
+        <img
+            src="{{ url_for('static', filename='images/gomburza.jpg') }}"
+            alt="Historical illustration of the three GOMBURZA priests"
+            class="detail-image"
+        >
+
+        <h1>The Execution of GOMBURZA</h1>
+
+        <p class="detail-intro">
+            The execution of three Filipino priests on February 17,
+            1872, became a powerful symbol of injustice under
+            Spanish colonial rule and an important moment in the
+            development of Filipino nationalism.
+        </p>
+    </header>
+
+    <section class="detail-section">
+        <h2>Historical Background</h2>
+
+        <p>
+            On February 17, 1872, three Filipino secular priests
+            were executed by Spanish colonial authorities at
+            Bagumbayan, an area near present-day Luneta in Manila.
+            They became known collectively as GOMBURZA, a name
+            formed from the beginnings of their surnames.
+        </p>
+
+        <p>
+            The three priests were
+            <a
+                href="https://en.wikipedia.org/wiki/Mariano_G%C3%B3mez"
+                target="_blank"
+                rel="noopener noreferrer"
+            >Mariano Gómez</a>,
+            <a
+                href="https://en.wikipedia.org/wiki/Jos%C3%A9_Burgos"
+                target="_blank"
+                rel="noopener noreferrer"
+            >José Burgos</a>,
+            and
+            <a
+                href="https://en.wikipedia.org/wiki/Jacinto_Zamora"
+                target="_blank"
+                rel="noopener noreferrer"
+            >Jacinto Zamora</a>.
+            They were accused of involvement in the Cavite Mutiny
+            of January 1872. The accusations and proceedings remain
+            controversial, and historians have questioned the
+            fairness and reliability of the colonial authorities'
+            case against them.
+        </p>
+
+        <p>
+            Their execution by garrote shocked many Filipinos.
+            The event exposed tensions between Filipino clergy
+            and Spanish religious authorities, as well as wider
+            inequalities within the colonial system.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Historical Significance</h2>
+
+        <p>
+            The execution of GOMBURZA became a turning point in
+            the development of Filipino national consciousness.
+            Their deaths were remembered by later reformers and
+            nationalists as an example of colonial injustice.
+        </p>
+
+        <p>
+            The event also influenced
+            <a
+                href="https://en.wikipedia.org/wiki/Jos%C3%A9_Rizal"
+                target="_blank"
+                rel="noopener noreferrer"
+            >José Rizal</a>,
+            who dedicated his novel <em>El filibusterismo</em>
+            to the three priests. Through his writing, he helped
+            preserve their memory and draw attention to the
+            abuses of Spanish colonial rule.
+        </p>
+
+        <p>
+            Although the Cavite Mutiny and the execution of
+            GOMBURZA were connected, they were separate events:
+            the uprising occurred on January 20, while the priests
+            were executed on February 17, 1872.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Connection to the Present</h2>
+
+        <p>
+            GOMBURZA remains an important part of Philippine
+            history and is remembered for the questions their
+            case raises about justice, due process, and the
+            treatment of people under colonial authority.
+        </p>
+
+        <p>
+            Their story encourages students to examine historical
+            evidence, question unfair accusations, and recognize
+            how the pursuit of justice can influence a nation's
+            identity and future.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>References</h2>
+
+        <ol>
+            <li>
+                National Historical Commission of the Philippines.
+                <em>GOMBURZA: An NHCP Documentary.</em>
+                <a
+                    href="https://memory.nhcp.gov.ph/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    NHCP historical resources
+                </a>
+            </li>
+
+            <li>
+                Encyclopaedia Britannica.
+                <em>José Rizal: Life and Works.</em>
+                <a
+                    href="https://www.britannica.com/biography/Jose-Rizal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Read about José Rizal
+                </a>
+            </li>
+        </ol>
+    </section>
+
+    <a href="{{ url_for('home') }}" class="back-link bottom-link">
+        ← Return to the Historical Timeline
+    </a>
+
+</article>
+
+{% endblock %}

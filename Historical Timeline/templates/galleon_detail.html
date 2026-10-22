@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% block title %}The Manila–Acapulco Galleon Trade | Philippine History{% endblock %}
+
+{% block content %}
+
+<article class="history-detail">
+
+    <a href="{{ url_for('home') }}" class="back-link">
+        ← Back to Historical Timeline
+    </a>
+
+    <header class="detail-header">
+        <p class="eyebrow">1565–1815 · SPANISH COLONIAL PERIOD</p>
+
+        <img
+            src="{{ url_for('static', filename='images/galleon_trade.jpg') }}"
+            alt="Historical illustration of a Spanish galleon"
+            class="detail-image"
+        >
+
+        <h1>The Manila–Acapulco Galleon Trade</h1>
+
+        <p class="detail-intro">
+            A transpacific trading network that connected the
+            Philippines, Mexico, and other parts of the world
+            for more than two centuries.
+        </p>
+    </header>
+
+    <section class="detail-section">
+        <h2>Historical Background</h2>
+
+        <p>
+            The Manila–Acapulco Galleon Trade developed after
+            Spanish expeditions established a lasting route
+            across the Pacific in 1565. Manila became the main
+            Asian port, while Acapulco in Mexico served as the
+            American endpoint of the route.
+        </p>
+
+        <p>
+            Spanish galleons transported Asian goods, including
+            silk, porcelain, and spices, across the Pacific.
+            Mexican silver was an important form of payment
+            for goods purchased in Asia. Merchants, sailors,
+            and other people also moved along this route.
+        </p>
+
+        <p>
+            The trade operated under Spanish colonial control
+            and was subject to government regulations. It
+            continued until 1815, when the final official
+            Manila galleon voyage took place.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Historical Significance</h2>
+
+        <p>
+            The galleon trade connected Asian and American
+            markets and made Manila an important international
+            trading center. It helped move goods, money,
+            knowledge, and cultural influences across oceans.
+        </p>
+
+        <p>
+            However, its benefits were not shared equally.
+            The trade mainly served imperial and merchant
+            interests, while colonial policies influenced
+            local production, labor, and economic life.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Connection to the Present</h2>
+
+        <p>
+            The galleon trade helps us understand how the
+            Philippines became connected to global commerce.
+            Its history also shows how international trade
+            can influence culture, communities, and economies.
+        </p>
+
+        <p>
+            Today, the Philippines continues to exchange
+            products, services, and ideas with countries
+            around the world.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>References</h2>
+
+        <ol>
+            <li>
+                Encyclopaedia Britannica.
+                <em>Manila–Acapulco Galleon Trade.</em>
+                <a
+                    href="https://www.britannica.com/topic/Manila-galleon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Read about the Manila galleon trade
+                </a>
+            </li>
+
+            <li>
+                National Historical Commission of the Philippines.
+                Historical resources on Philippine colonial history.
+                <a
+                    href="https://nhcp.gov.ph/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    NHCP official website
+                </a>
+            </li>
+        </ol>
+    </section>
+
+    <a href="{{ url_for('home') }}" class="back-link bottom-link">
+        ← Return to the Historical Timeline
+    </a>
+
+</article>
+
+{% endblock %}

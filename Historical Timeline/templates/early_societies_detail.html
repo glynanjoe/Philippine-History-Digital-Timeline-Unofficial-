@@ -1,0 +1,122 @@
+
+{% extends "base.html" %}
+
+{% block title %}Early Philippine Societies | Historical Timeline{% endblock %}
+
+{% block content %}
+<article class="history-detail">
+    <a href="{{ url_for('home') }}" class="back-link">
+        ← Back to Historical Timeline
+    </a>
+
+    <header class="detail-header">
+        <p class="eyebrow">BEFORE 1521 · PRECOLONIAL PERIOD</p>
+
+        <img
+            src="{{ url_for('static', filename='images/early_societies.jpg') }}"
+            alt="Illustration of early Philippine communities"
+            class="detail-image"
+        >
+
+        <h1>Early Philippine Societies and Barangays</h1>
+
+        <p class="detail-intro">
+            Before Spanish colonization, communities across the
+            Philippine archipelago developed their own forms of
+            leadership, trade, social organization, and cultural
+            traditions.
+        </p>
+    </header>
+
+    <section class="detail-section">
+        <h2>Historical Background</h2>
+
+        <p>
+            Before 1521, the Philippine archipelago was inhabited
+            by diverse communities that interacted through trade,
+            migration, and cultural exchange. These communities
+            differed in language, beliefs, political organization,
+            and ways of life.
+        </p>
+
+        <p>
+            In many lowland communities, people lived in settlements
+            commonly called barangays. A datu often served as a
+            leader, although customs and leadership structures
+            varied across regions. People engaged in activities
+            such as farming, fishing, weaving, metalworking, and
+            maritime trade.
+        </p>
+
+        <p>
+            Trade connected communities with other parts of Asia.
+            Archaeological discoveries, artifacts, and early written
+            accounts provide evidence of these connections and help
+            historians study Philippine societies before Spanish rule.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Historical Significance</h2>
+
+        <p>
+            Precolonial societies demonstrate that the peoples of
+            the Philippine archipelago already had established
+            communities, leadership systems, economic activities,
+            and cultural practices before Spanish colonization.
+        </p>
+
+        <p>
+            Studying this period helps historians understand the
+            diversity of early Philippine societies and avoid
+            treating the entire archipelago as if every community
+            had the same customs or political system.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Connection to the Present</h2>
+
+        <p>
+            Knowledge of precolonial societies encourages Filipinos
+            to appreciate the country's cultural diversity and
+            indigenous heritage. It also helps us recognize that
+            Philippine history includes many local traditions and
+            community experiences that existed before colonial rule.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>References</h2>
+
+        <ol>
+            <li>
+                National Museum of the Philippines.
+                <a href="https://www.nationalmuseum.gov.ph/"
+                   target="_blank" rel="noopener noreferrer">
+                    Official website and archaeological resources
+                </a>.
+            </li>
+
+            <li>
+                Encyclopaedia Britannica.
+                <a href="https://www.britannica.com/place/Philippines"
+                   target="_blank" rel="noopener noreferrer">
+                    Philippines: Historical background
+                </a>.
+            </li>
+
+            <li>
+                Scott, William Henry. (1994).
+                <em>Barangay: Sixteenth-Century Philippine Culture
+                and Society.</em>
+                Ateneo de Manila University Press.
+            </li>
+        </ol>
+    </section>
+
+    <a href="{{ url_for('home') }}" class="back-link bottom-link">
+        ← Return to the Historical Timeline
+    </a>
+</article>
+{% endblock %}
